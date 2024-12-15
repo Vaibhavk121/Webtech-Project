@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Gift - Organ Donation Awareness</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="./src/Logo.png" alt="Life Gift Logo" class="logo-img">
+                    <span class="logo-text">Life Gift</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-donate">Why Donate</a></li>
+                <li><a href="#stories">Success Stories</a></li>
+                <li><button class="register-trigger register-btn">Register as Donor</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Give the Gift of Life</h1>
+            <p>One organ donor can save up to 8 lives</p>
+            <button class="cta-button">Become a Donor</button>
+        </section>
+
+        <section id="about" class="info-section">
+            <h2>About Organ Donation</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>What is Organ Donation?</h3>
+                    <p>Learn about the life-saving process of organ donation</p>
+                </div>
+                <div id="why-donate" class="card">
+                    <h3>Who Can Donate?</h3>
+                    <p>Find out if you're eligible to become a donor</p>
+                </div>
+                <div class="card">
+                    <h3>Types of Donation</h3>
+                    <p>Understand different types of organ and tissue donation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-donate" class="why-donate-section">
+            <h2 class="section-title">Why Become an Organ Donor?</h2>
+            
+            <div class="reasons-container">
+                <div class="reason-card">
+                    <div class="reason-icon">❤️</div>
+                    <h3>Save Multiple Lives</h3>
+                    <p>One organ donor can save up to 8 lives and enhance the lives of up to 75 people through tissue donation.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">🎁</div>
+                    <h3>Give the Greatest Gift</h3>
+                    <p>Organ donation is one of the most selfless acts possible, giving others a second chance at life.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">⏰</div>
+                    <h3>Critical Need</h3>
+                    <p>Every 10 minutes, someone is added to the organ transplant waiting list. Your decision can help save them.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">🤝</div>
+                    <h3>Zero Cost</h3>
+                    <p>Organ donation is completely free for donors and their families. All medical costs are covered by the recipient.</p>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">114,000+</span>
+                    <span class="stat-label">People waiting for organs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">39,000+</span>
+                    <span class="stat-label">Transplants in 2022</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">17</span>
+                    <span class="stat-label">People die daily waiting</span>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <button class="cta-button register-trigger">Become a Donor Today</button>
+            </div>
+        </section>
+
+        <section id="stories" class="success-stories">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">Real stories of hope, courage, and new beginnings</p>
+
+            <div class="stories-container">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./src/heart.webp" alt="Sara's Story">
+                        <div class="story-tag">Heart Recipient</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Sara's New Beginning</h3>
+                        <p class="story-age">Age: 24</p>
+                        <p class="story-text">"After waiting 18 months for a heart transplant, I received the gift of life. Now I'm back to teaching dance and cherishing every moment with my students."</p>
+                        <button class="read-more-btn" onclick="openStory('Sara')">Read Full Story</button>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./src/kidney.png" alt="Peter's Story">
+                        <div class="story-tag">Kidney Recipient</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Peter's Journey</h3>
+                        <p class="story-age">Age: 20</p>
+                        <p class="story-text">"Thanks to my donor, I've been able to watch my children grow up. Every day is a blessing, and I'm forever grateful for this second chance."</p>
+                        <button class="read-more-btn" onclick="openStory('Peter')">Read Full Story</button>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./src/liver.png" alt="Joseph's Story">
+                        <div class="story-tag">Liver Recipient</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Joseph's Miracle</h3>
+                        <p class="story-age">Age: 19</p>
+                        <p class="story-text">"Born with a rare liver condition, Joseph received her transplant at age 8. Today, she's thriving and dreams of becoming a doctor."</p>
+                        <button class="read-more-btn" onclick="openStory('Joseph')">Read Full Story</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="share-story">
+                <h3>Ready to Make a Difference?</h3>
+                <button class="share-story-btn register-trigger">Become a Donor</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 All Rights Reserved</p>
+        <p>Made with Love By VK</p>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <section id="register" class="register-section">
+                <h2 class="section-title">Register as an Organ Donor</h2>
+                <div class="form-container">
+                    <form id="donorForm" class="donor-form">
+                        <!-- Personal Information -->
+                        <div class="form-group">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="firstName">First Name*</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="lastName">Last Name*</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="dob">Date of Birth*</label>
+                                    <input type="date" id="dob" name="dob" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="gender">Gender*</label>
+                                    <select id="gender" name="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="form-group">
+                            <h3>Contact Information</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="address">Address*</label>
+                                <textarea id="address" name="address" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Medical Information -->
+                        <div class="form-group">
+                            <h3>Medical Information</h3>
+                            <div class="form-field">
+                                <label for="bloodGroup">Blood Group*</label>
+                                <select id="bloodGroup" name="bloodGroup" required>
+                                    <option value="">Select Blood Group</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label>Organs willing to donate:</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="organs" value="kidneys"> Kidneys</label>
+                                    <label><input type="checkbox" name="organs" value="liver"> Liver</label>
+                                    <label><input type="checkbox" name="organs" value="heart"> Heart</label>
+                                    <label><input type="checkbox" name="organs" value="lungs"> Lungs</label>
+                                    <label><input type="checkbox" name="organs" value="pancreas"> Pancreas</label>
+                                    <label><input type="checkbox" name="organs" value="corneas"> Corneas</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-field">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    I confirm that all information provided is accurate and I consent to being an organ donor
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Register as Donor</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="storyModal-Sara" class="story-modal modal">
+        <div class="story-modal-content modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="full-story">
+                <div class="story-header">
+                    <img src="./src/kidney.png" alt="Sara's Story">
+                    <div class="story-tag">Heart Recipient</div>
+                </div>
+                <div class="story-details">
+                    <h2>Sara's New Beginning</h2>
+                    <div class="story-meta">
+                        <span>Age: 28</span>
+                        <span>Location: Boston, MA</span>
+                        <span>Transplant Date: June 15, 2021</span>
+                    </div>
+                    <div class="story-body">
+                        <p>Sara  was just 26 when she was diagnosed with dilated cardiomyopathy, a condition that weakens the heart muscle and affects its ability to pump blood effectively. As a dance instructor and lifelong performer, the diagnosis threatened not just her life but her entire way of living.</p>
+                        
+                        <p>"When I first got the diagnosis, my world stopped spinning," Sara recalls. "Dancing wasn't just my career – it was my passion, my way of expressing myself. Suddenly, I couldn't even climb a flight of stairs without feeling exhausted."</p>
+                        
+                        <p>For 18 months, Sara's condition deteriorated despite medical intervention. She was placed on the transplant waiting list as her only hope for survival. During this time, she had to stop teaching and moved back in with her parents who became her primary caregivers.</p>
+                        
+                        <h3>The Call That Changed Everything</h3>
+                        <p>On June 15, 2021, at 3:27 AM, Sara received the call that would change her life. A compatible heart had become available. Within hours, she was in surgery at Massachusetts General Hospital.</p>
+                        
+                        <p>"I remember waking up and feeling different immediately. It's hard to explain, but I could feel the strength of my new heart. It was like my body was coming back to life."</p>
+                        
+                        <h3>Dancing Again</h3>
+                        <p>Six months after her transplant, Sara took her first dance steps again. Today, she's back to teaching full-time at her dance studio, sharing her passion with students aged 5 to 65.</p>
+                        
+                        <p>"Every day when I teach, I think about my donor and their family. Their gift didn't just save my life – it saved my soul. Dancing is how I honor their memory, and I pour my gratitude into every movement."</p>
+                        
+                        <blockquote>"To anyone considering becoming an organ donor: you're not just saving a life, you're saving someone's entire world – their dreams, their passions, their future."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="storyModal-Peter" class="story-modal modal">
+        <div class="story-modal-content modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="full-story">
+                <div class="story-header">
+                    <img src="./src/heart.webp" alt="Peter's Story">
+                    <div class="story-tag">Kidney Recipient</div>
+                </div>
+                <div class="story-details">
+                    <h2>Peter's Journey to Health</h2>
+                    <div class="story-meta">
+                        <span>Age: 45</span>
+                        <span>Location: Chicago, IL</span>
+                        <span>Transplant Date: March 3, 2020</span>
+                    </div>
+                    <div class="story-body">
+                        <p>Peter , a father of three and high school teacher, was diagnosed with polycystic kidney disease in his early 40s. The genetic condition, which had affected several members of his family, caused his kidneys to fail progressively.</p>
+                        
+                        <p>"The hardest part wasn't the dialysis or the constant fatigue – it was seeing the worry in my children's eyes," Peter shares. "They were 12, 9, and 6 at the time, and they couldn't understand why dad couldn't play with them anymore."</p>
+                        
+                        <h3>A Sister's Gift</h3>
+                        <p>After a year on dialysis, Peter's sister Mary stepped forward as a living donor. Although she was a match, complications prevented her from donating. However, they entered a paired donation program, which led to a successful match with another donor-recipient pair.</p>
+                        
+                        <h3>Back to Life</h3>
+                        <p>The transplant was successful, and Peter's recovery exceeded all expectations. Within three months, he was back in the classroom, teaching history to his beloved students. More importantly, he could be the active father his children needed.</p>
+                        
+                        <p>"The first time I played soccer with my kids after the transplant, I actually cried. Such a simple thing that I had taken for granted before became the most precious gift."</p>
+                        
+                        <h3>Advocating for Others</h3>
+                        <p>Today, Peter is an active advocate for organ donation in his community. He organizes annual awareness events at his school and has helped several families navigate the transplant journey.</p>
+                        
+                        <blockquote>"Organ donation isn't just about saving lives – it's about saving families, preserving bonds, and giving people the chance to fulfill their roles in life. I'm not just a transplant recipient; I'm a father who got to see his children grow up."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="storyModal-Joseph" class="story-modal modal">
+        <div class="story-modal-content modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="full-story">
+                <div class="story-header">
+                    <img src="./src/liver.png" alt="Joseph's Story">
+                    <div class="story-tag">Liver Recipient</div>
+                </div>
+                <div class="story-details">
+                    <h2>Joseph's Miracle</h2>
+                    <div class="story-meta">
+                        <span>Age: 12</span>
+                        <span>Location: Seattle, WA</span>
+                        <span>Transplant Date: September 12, 2019</span>
+                    </div>
+                    <div class="story-body">
+                        <p>Joseph was born with biliary atresia, a rare liver condition that affects infant bile ducts. Despite undergoing a procedure called the Kasai operation at just 6 weeks old, doctors knew she would eventually need a liver transplant.</p>
+                        
+                        <h3>Early Struggles</h3>
+                        <p>For the first eight years of her life, Joseph fought through countless hospital stays, procedures, and limitations. Her parents, John and Lisa, watched their daughter battle through challenges no child should face, all while maintaining her bright smile and infectious laugh.</p>
+                        
+                        <p>"Even when she was really sick, Joseph would make her nurses laugh," Lisa remembers. "She'd draw them pictures and tell stories about becoming a doctor someday to help other kids like her."</p>
+                        
+                        <h3>The Perfect Match</h3>
+                        <p>In September 2019, after a particularly difficult summer that saw Joseph's condition worsen, the family received news of a matching donor. The 12-hour surgery was successful, marking the beginning of Joseph's new life.</p>
+                        
+                        <h3>Thriving Today</h3>
+                        <p>Now 12 years old, Joseph is living the life her parents always dreamed of for her. She plays soccer, participates in her school's science club, and maintains honor roll grades. Her experience has only strengthened her resolve to become a pediatric transplant surgeon.</p>
+                        
+                        <p>"I want to help kids like me," Joseph says. "I know what it's like to be sick and scared, but I also know what it's like to get better. I want to give that gift to others."</p>
+                        
+                        <h3>A Family's Message</h3>
+                        <p>The  family has become passionate advocates for organ donation, participating in awareness events and sharing their story whenever possible.</p>
+                        
+                        <blockquote>"Our daughter's donor family turned their deepest tragedy into our greatest blessing. There are no words to express our gratitude, but we honor their gift by ensuring Joseph lives life to its fullest." - John and Lisa </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
